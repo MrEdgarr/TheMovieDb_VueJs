@@ -1,0 +1,92 @@
+@mixin bg-gradient {
+    background: linear-gradient(45deg, $blue-light-1, $blue-light-2, $violet-light-1, $violet-light-2);
+
+    background: -moz-linear-gradient(45deg, $blue-light-1, $blue-light-2, $violet-light-1, $violet-light-2);
+    background: -o-linear-gradient(45deg, $blue-light-1, $blue-light-2, $violet-light-1, $violet-light-2);
+    background: -ms-linear-gradient(45deg, $blue-light-1, $blue-light-2, $violet-light-1, $violet-light-2);
+    background: -webkit-linear-gradient(45deg, $blue-light-1, $blue-light-2, $violet-light-1, $violet-light-2);
+}
+
+@mixin border-radius {
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+}
+
+@mixin box-shadow {
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    -o-box-shadow: $box-shadow;
+    -ms-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+
+@mixin absCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+@mixin absY-Center {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+@mixin absX-Center {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
+
+
+
+@mixin transition {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@mixin mobile {
+    @media screen and (max-width:520px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width:991px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width:1200px) {
+        @content;
+    }
+}

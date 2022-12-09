@@ -1,0 +1,44 @@
+// Colors
+$white: #ffffff;
+
+$gray-light-1: #f6f6f6;
+$gray-light-2: #efefef;
+$gray-light-3: #dddddd;
+$gray-light-4: #d6d6d6;
+$gray-dark-1: #707070;
+$gray-dark-2: #797979;
+$gray-dark-3: #747474;
+
+$black: #000000;
+$black-2: #1b1b1b;
+$black-3: #13212d;
+$black-4: #222222;
+$black-5: #0e0e0e;
+$black-6: #111111;
+
+$violet-light-1: #b446ff;
+$violet-light-2: rgb(151, 0, 255);
+
+$blue-light-1: #4c46e6;
+$blue-light-2: #6d68fe;
+
+// background
+$bg-black: #1b1b1b;
+$bg-hover: rgba(0, 0, 0, 0.5);
+$bg-gradient: linear-gradient(to right, $blue-light-1, $blue-light-2, $violet-light-1, $violet-light-2);
+
+// border
+$border-gray-1: 0.1rem solid #dbdbdb;
+$border-gray-2: 0.1rem solid #eeeeee;
+$border-gray-3: 0.2rem solid rgba(255, 255, 255, 0.33);
+$border-white: 0.1rem solid $white;
+$border-violet-light-1: 0.1rem solid $violet-light-1;
+$border-violet-light-2: 0.2rem solid $violet-light-1;
+
+$border-radius: 1rem;
+
+//Box-shadow
+$box-shadow: 0 0.1rem 0.5rem 0 rgb(0 0 0 / 10%);
+
+//Text
+$text-color: rgba(255, 255, 255, 0.57);
