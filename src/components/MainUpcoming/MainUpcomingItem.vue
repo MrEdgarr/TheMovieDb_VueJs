@@ -59,9 +59,6 @@
 export default {
   props: ["db_upcoming_movie", "db_genre"],
   components: {},
-  mounted() {
-    console.log(this.$route);
-  },
 
   data() {
     return { voteFormart: "" };

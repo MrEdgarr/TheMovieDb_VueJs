@@ -26,11 +26,9 @@
       >
         <swiper-slide v-for="items in db_upcoming_movie" :key="items.id">
           <div className="sliderHome_upcoming_heading_slider_context">
-            <router-link
-              :to="{ name: 'moviedetail', params: { id: items.id } }"
-            >
+            <a :to="{ name: 'moviedetail', params: { id: items.id } }">
               <img :src="getPosterURL(items.backdrop_path)" alt="" />
-            </router-link>
+            </a>
             <h4>
               Aquaman &nbsp;&nbsp;
               <span> release on 30 nov </span>
