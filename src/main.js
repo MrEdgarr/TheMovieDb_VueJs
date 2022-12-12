@@ -4,6 +4,7 @@ import store from "./store";
 
 import "./assets/scss/main.scss";
 
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 /* import font awesome icon component */

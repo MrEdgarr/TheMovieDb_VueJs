@@ -1,0 +1,102 @@
+@import '../../assets/scss/main.scss';
+
+.sliderHome {
+    // margin-top: 8rem;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+ 
+.sliderHome_upcoming {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    @include tablet{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 5rem;
+    }
+
+    &_heading {
+        position: relative;
+        width: 35rem;
+        height: 35rem;
+
+        @include tablet{
+            width: 100%;
+            height: 10rem;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+
+        h3 {
+            width: 60%;
+            font-weight: 700;
+            color: $white;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-family: 'Caveat', cursive;
+            line-height: 4.5rem;
+            font-style: italic;
+            @include absCenter;
+            @include tablet {
+                width: 90%;
+                text-align: center;
+            }
+        }
+    }
+
+    &_heading_slider {
+        width: calc(100% - 35rem);
+        height: 100%;
+
+        @include tablet{
+            width: 100%;
+        }
+
+        &_context {
+            background: $white;
+            height: 35rem;
+            @include box-shadow;
+
+            h4 {
+                font-size: 2rem;
+                font-weight: 700;
+                text-transform: capitalize;
+                text-align: center;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            span {
+                font-family: 'Lato', sans-serif;
+                color: #d9871c;
+                font-size: 1.6rem;
+                font-style: italic;
+                font-weight: 500;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 30rem;
+            object-fit: cover;
+            padding-left: 0.5rem;
+
+            @include tablet{
+                padding: 0.25rem;
+                padding-top: 0.5rem;
+            }
+        }
+
+    }
+}
