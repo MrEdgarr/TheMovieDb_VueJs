@@ -1,8 +1,15 @@
-<script setup>
-</script>
-
 <template>
+  <MainNavVue />
 </template>
 
-<style scoped>
+<script>
+import MainNavVue from "./components/MainNav/MainNav.vue";
+export default {
+  components: {
+    MainNavVue,
+  },
+};
+</script>
+
+<style>
 </style>

@@ -1,0 +1,110 @@
+header {
+    .nav__right {
+        .nav-search {
+            position: relative;
+            @include flexCenter;
+
+            @include tablet {
+                display: none;
+            }
+
+            input {
+                height: 4rem;
+                width: 30rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                border: none;
+                background: $white;
+                border-top-left-radius: $border-radius;
+                border-bottom-left-radius: $border-radius;
+            }
+
+            button {
+                width: 4rem;
+                height: 4rem;
+                line-height: 4.5rem;
+                text-align: center;
+                border: 0;
+                border-top-right-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+                background: $bg-black;
+                color: $white;
+                font-size: 2rem;
+            }
+        }
+
+        .searchMobile {
+            display: none;
+
+            @include tablet {
+                width: 4rem;
+                height: 4rem;
+                line-height: 4.5rem;
+                text-align: center;
+                border: 0;
+                border-radius: 50%;
+                background: $bg-black;
+                color: $white;
+                font-size: 2rem;
+                display: block;
+            }
+        }
+    }
+}
+
+
+.search__mobile {
+    position: fixed;
+    top: 0rem;
+    width: 100%;
+    right: 0;
+    left: 0;
+    padding: 1rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    @include bg-gradient;
+    @include transition;
+
+    input {
+        height: 4rem;
+        width: 30rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border: none;
+        background: $white;
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+
+        @include tablet {
+            width: 90%;
+        }
+    }
+
+    button {
+        width: 4rem;
+        height: 4rem;
+        line-height: 4.5rem;
+        text-align: center;
+        border: 0;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        background: $bg-black;
+        color: $white;
+        font-size: 2rem;
+
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    @include tablet {
+        &.show {
+            top: 8rem;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
