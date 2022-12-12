@@ -15,17 +15,15 @@
         <div class="upcom_main_tab_content_item_img_btn">
           <ul>
             <li>
-              <router-link
-                :to="{ name: 'T_Home', params: { id: item.id } }"
-                class="btn"
-                >View Trailer</router-link
+              <a :to="{ name: 'T_Home', params: { id: item.id } }" class="btn"
+                >View Trailer</a
               >
             </li>
             <li>
-              <router-link
+              <a
                 :to="{ name: 'moviedetail', params: { id: item.id } }"
                 class="btn"
-                >View Details</router-link
+                >View Details</a
               >
             </li>
           </ul>
@@ -45,10 +43,9 @@
         <div class="tab_content_item_desc_box_inner">
           <div class="tab_content_item_desc_box_inner_text">
             <h3>
-              <router-link
-                :to="{ name: 'moviedetail', params: { id: item.id } }"
-                >{{ item.original_title }}</router-link
-              >
+              <a :to="{ name: 'moviedetail', params: { id: item.id } }">{{
+                item.original_title
+              }}</a>
             </h3>
             <p>{{ getDbGenre(item.genre_ids) }}</p>
           </div>
