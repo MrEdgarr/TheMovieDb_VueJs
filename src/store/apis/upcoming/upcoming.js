@@ -1,11 +1,11 @@
 import axios from "axios";
 const state = {
-  db_upcommit_movie: [],
+  db_upcoming_movie: [],
 };
 
 // getters
 const getters = {
-  db_upcommit_movie: (state) => state.db_upcommit_movie,
+  db_upcoming_movie: (state) => state.db_upcoming_movie,
 };
 
 // actions
@@ -27,7 +27,7 @@ const actions = {
 // mutations
 const mutations = {
   setUpcomingMovie(state, db) {
-    state.db_upcommit_movie = db;
+    state.db_upcoming_movie = db;
   },
 };
 

@@ -2,7 +2,7 @@
   <div class="upcom_main_tab_content">
     <div
       class="upcom_main_tab_content_item"
-      v-for="item in db_upcommit_movie"
+      v-for="item in db_upcoming_movie"
       :key="item.id"
     >
       <div class="upcom_main_tab_content_item_img">
@@ -60,7 +60,7 @@
 
 <script>
 export default {
-  props: ["db_upcommit_movie", "db_genre"],
+  props: ["db_upcoming_movie", "db_genre"],
   components: {},
   mounted() {
     console.log(this.$route);

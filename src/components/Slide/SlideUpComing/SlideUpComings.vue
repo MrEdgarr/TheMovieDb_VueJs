@@ -24,7 +24,7 @@
         :modules="modules"
         class="mySwiper"
       >
-        <swiper-slide v-for="items in db_upcommit_movie" :key="items.id">
+        <swiper-slide v-for="items in db_upcoming_movie" :key="items.id">
           <div className="sliderHome_upcoming_heading_slider_context">
             <router-link
               :to="{ name: 'moviedetail', params: { id: items.id } }"
@@ -55,7 +55,7 @@ export default {
     Swiper,
     SwiperSlide,
   },
-  props: ["db_upcommit_movie"],
+  props: ["db_upcoming_movie"],
   data() {
     return {
       modules: [Autoplay],

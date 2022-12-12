@@ -1,9 +1,11 @@
 @import "../../assets/scss/main.scss";
 
 .upcom_main {
+  padding-top: 10rem;
   &_title {
     width: 100%;
     text-align: center;
+    padding-bottom: 5rem;
 
     h3 {
       font-size: 3.2rem;

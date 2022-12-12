@@ -1,7 +1,7 @@
 <template>
   <div>
     <SlidePoster />
-    <SlideUpComings :db_upcommit_movie="db_upcommit_movie" />
+    <SlideUpComings :db_upcoming_movie="db_upcoming_movie" />
   </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(["db_upcommit_movie"]),
+    ...mapGetters(["db_upcoming_movie"]),
   },
   methods: {
     ...mapActions(["getUpcomingMovie"]),
